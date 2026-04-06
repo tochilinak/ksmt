@@ -254,15 +254,15 @@ abstract class ModelGenerationTest {
             op { mkArithGtNoSimplify(it.v(intSort), it.v(intSort)) }
             op { mkArithLeNoSimplify(it.v(intSort), it.v(intSort)) }
             op { mkArithLtNoSimplify(it.v(intSort), it.v(intSort)) }
-//            unspecifiedOp {
-//                val base = it.v(intSort)
-//                val power = it.v(intSort)
-//                UnspecifiedOp(
-//                    op = mkArithPowerNoSimplify(base, power),
-//                    unspecifiedIf = (base eq 0.expr) and (power eq 0.expr),
-//                    unspecifiedValue = 0.expr,
-//                )
-//            }
+            unspecifiedOp {
+                val base = it.v(intSort)
+                val power = it.v(intSort)
+                UnspecifiedOp(
+                    op = mkArithPowerNoSimplify(base, power),
+                    unspecifiedIf = (base eq 0.expr) and (power eq 0.expr),
+                    unspecifiedValue = 0.expr,
+                )
+            }
             op { mkArithUnaryMinusNoSimplify(it.v(intSort)) }
 
             unspecifiedOp {

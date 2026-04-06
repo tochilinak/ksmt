@@ -17,7 +17,7 @@ val `mac-arm` by sourceSets.creating
 val `windows-arm` by sourceSets.creating
 val `linux-arm` by sourceSets.creating
 
-val z3Version = "4.16.0"
+val z3Version = "4.15.8"
 
 val winDllPath = listOf("**/vcruntime140.dll", "**/vcruntime140_1.dll", "**/libz3.dll", "**/libz3java.dll")
 val linuxSoPath = listOf("**/libz3.so", "**/libz3java.so")
